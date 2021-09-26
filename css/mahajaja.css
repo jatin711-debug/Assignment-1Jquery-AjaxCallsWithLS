@@ -2,6 +2,40 @@ body{
     margin: 0;
 }
 
-.content{
-    displ
+.grid{
+    display:grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-areas: 
+    " head  head "
+    "sec-1 sec-2"
+    " foot foot ";
+    grid-column-gap: 10px;
+}
+
+div{
+    margin:2px;
+    border: 1px solid black;
+}
+
+.head{
+    text-align: center;
+    grid-area: head;
+    width: 100%;
+}
+
+.sec-1{
+    grid-area: sec-1;
+}
+
+.sec-2{
+    grid-area: sec-2;
+}
+
+.foot{
+    margin-top: 100%;
+    background-color: black;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: foot;
+    height:30vh;
 }

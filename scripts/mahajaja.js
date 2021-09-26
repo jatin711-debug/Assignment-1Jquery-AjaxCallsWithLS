@@ -6,9 +6,10 @@ const dataURL = "../JSONdata/A1-JSON.json"
 // ]
 
 
-
 $(document).ready(function(){
     
+
+    //calling ajax for data retrival
     $.ajax({
         type: "GET",
         url: dataURL,
@@ -19,6 +20,9 @@ $(document).ready(function(){
     });
 });
 
+
+
+// storing data in local storage
 const useLocalStorage = (data)=>{
     localStorage.setItem("studentName",data.myName);
     localStorage.setItem("studentId",data.myID);
@@ -44,3 +48,4 @@ class Courses{
         this.image = image;
     }
 }
+
