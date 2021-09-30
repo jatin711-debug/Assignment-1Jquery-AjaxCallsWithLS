@@ -3,7 +3,7 @@
 const dataURL = "../JSONdata/A1-JSON.json"
 const rawProgramData = [
     {term:1,type:"Prog",code:1013,image:"../media/images/Java.jpg"},
-    {term:1,type:"Tele",code:1564,image:"../media/images/Java.jpg"},
+    {term:1,type:"Tele",code:1564,image:"../media/images/Tele.jfif"},
     {term:2,type:"Comm",code:1654,image:"../media/images/Java.jpg"},
     {term:2,type:"Syst",code:1632,image:"../media/images/Java.jpg"},
     {term:2,type:"DBAs",code:4645,image:"../media/images/Java.jpg"},
