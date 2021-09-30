@@ -52,6 +52,15 @@ $(function(){
     $("#btn-4").on("click", function(evt){
         displayContent(evt.target.value);
     });
+
+    $("#btn-5").on("click", function(evt){
+        $(".output").toggleClass("alert");
+    });
+
+    $("#btn-6").on("click", function(evt){
+        $("td:contains('Prog')").toggleClass("alert");
+    });
+
 });
 
 
@@ -60,7 +69,6 @@ const displayContent = (termVal) => {
     $("#tb").html("")
     for(const data of rawProgramData){
         if(parseInt(termVal) === data.term){
-            
             $("#tb").append(`
                 <tr>
                 <td>Course: ${data.type} ${data.code} <img src="${data.image}"></td>
